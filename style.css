@@ -1,0 +1,151 @@
+/* Variables */
+
+:root {
+    --text-color: #221E1E;
+    --gradient-first-color: #FFD5CB;
+    --gradient-second-color: #FFFBF9;
+    --font-size-base: 1rem; /* 16px */
+    --font-size-sm: 1.125rem; /* 18px */
+    --font-size-md: 1.313rem; /* 21px */
+    --font-size-lg: 1.875rem; /* 30px */
+    --font-size-xl: 4.875rem; /* 78px */
+}
+
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    margin: 0;
+    hanging-punctuation: first allow-end last;
+    word-break: break-word;
+    font-size: var(--font-size-sm);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    min-block-size: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+    margin-block-start: 0;
+}
+
+p,
+li,
+dd {
+    text-wrap: pretty;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Global */
+
+html {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    background: linear-gradient(180deg, #FFD5CB 0%, #FFFBF9 40%);
+    background-repeat: no-repeat;
+}
+
+a {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+header,
+main,
+hr,
+header,
+footer {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: var(--text-color) 1px solid;
+}
+
+header {
+    margin-block-start: 4.5rem;
+    margin-block-end: 1.25rem;
+}
+
+main h1 {
+    margin-block-start: 4.5rem;
+
+    font-family: "rl-horizon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-xl);
+}
+
+main .hero {
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+
+main .hero .hero-text {
+    font-size: var(--font-size-lg);
+}
+
+main .hero .btn {
+    margin-block-start: 1.5rem;
+    display: inline-block;
+
+    border-radius: 4px;
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    box-shadow: 4px 4px 0 0 #000;
+    padding: 0.5rem 1.5rem;
+
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+main h2 {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+}
+
+main p {
+    font-size: var(--font-size-sm);
+}
